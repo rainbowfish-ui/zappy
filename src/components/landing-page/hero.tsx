@@ -4,8 +4,10 @@ import { PiStarFourBold } from "react-icons/pi";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen text-center flex-col flex items-center justify-center relative overflow-hidden gap-8">
-      <div className="size-[50rem] absolute bg-shadow bg-no-repeat -top-32 -left-20 pointer-events-none"></div>
+    <div
+      className="w-full min-h-screen text-center flex-col flex items-center justify-center relative overflow-hidden gap-8 -top-12"
+      id="home"
+    >
       <div className="bg-violet-500 px-4 py-1 rounded-full flex items-center justify-center gap-1 text-sm">
         <PiStarFourBold size={18} />
         <p>Coming soon</p>

@@ -2,13 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   color: white;
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(#ffffff, #636363);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
