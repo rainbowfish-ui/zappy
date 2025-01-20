@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="bg-violet-500 px-4 py-1 rounded-full flex items-center justify-center gap-1 text-sm">
         <PiStarFourBold size={18} />
-        <p>Coming soon</p>
+        <p>New version 2.0 released</p>
       </div>
       <h2 className="text-gradient w-[80%] font-semibold text-6xl text-gradient">
         The easiest way to solve your problems
@@ -24,7 +24,7 @@ const Hero = () => {
           placeholder="Enter you email"
         />
         <button className="px-4 py-2 bg-white rounded-full text-black font-semibold active:scale-95 transition-all">
-          Early Access
+          Access Beta
         </button>
       </div>
       <div className="flex-col flex gap-4 items-center justify-center">
