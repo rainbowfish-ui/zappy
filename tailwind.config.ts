@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: { shadow: 'url("/shadow.svg")' },
     },
   },
   plugins: [],
