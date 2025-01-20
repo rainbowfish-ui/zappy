@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import { useInView } from "motion/react";
+import React, { useRef } from "react";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { FaOctopusDeploy, FaSackDollar } from "react-icons/fa6";
@@ -45,15 +47,26 @@ const services = [
 ];
 
 const Services = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
   return (
     <div
-      className="w-full min-h-screen flex items-center justify-start flex-col pt-20 gap-10 px-40"
+      className="w-full flex items-center justify-start flex-col gap-10 px-40"
       id="services"
     >
-      <h2 className="text-5xl text-center text-gradient font-semibold">
+      <h2
+        className={`text-5xl text-center text-gradient font-semibold ${
+          inView ? "motion-preset-pop" : ""
+        }`}
+      >
         Grow your business with <br /> our services
       </h2>
-      <div className="flex flex-wrap gap-10 items-center justify-center text-[rgb(197,197,197)]">
+      <div
+        className={`flex flex-wrap gap-10 items-center justify-center text-[rgb(197,197,197)] ${
+          inView ? "motion-preset-pop motion-delay-300" : ""
+        }`}
+        ref={ref}
+      >
         {services.map(({ description, icon: Icon, name }) => {
           return (
             <div

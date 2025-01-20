@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar";
 import Hero from "./hero";
 import Services from "./services";
+import Testimonial from "./testimonial";
 
 const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ const LandingPage = () => {
       <Navbar />
       <Hero />
       <Services />
+      <Testimonial />
     </div>
   );
 };

@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
 }
 
+*::selection {
+  background-color: whitesmoke;
+  color: black;
+}
+
 body {
   background-color: black;
   color: white;
@@ -13,6 +18,12 @@ body {
 
 .text-gradient {
   background: -webkit-linear-gradient(#ffffff, #636363);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient::selection {
+  background: -webkit-linear-gradient(#141414, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

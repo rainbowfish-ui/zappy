@@ -8,17 +8,17 @@ const Hero = () => {
       className="w-full min-h-screen text-center flex-col flex items-center justify-center relative overflow-hidden gap-8 -top-12"
       id="home"
     >
-      <div className="bg-violet-500 px-4 py-1 rounded-full flex items-center justify-center gap-1 text-sm">
+      <div className="bg-violet-500 px-4 py-1 rounded-full flex items-center justify-center gap-1 text-sm motion-preset-shake motion-delay-300">
         <PiStarFourBold size={18} />
         <p>New version 2.0 released</p>
       </div>
-      <h2 className="text-gradient w-[80%] font-semibold text-6xl text-gradient">
+      <h2 className="text-gradient w-[80%] font-semibold text-6xl text-gradient motion-preset-pop">
         The easiest way to solve your problems
       </h2>
-      <p className="text-sm text-[#9e9e9e]">
+      <p className="text-sm text-[#9e9e9e] motion-preset-expand">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, illo!
       </p>
-      <div className="flex items-center justify-center gap-4 border-[#b8b8b8] border rounded-full">
+      <div className="flex items-center justify-center gap-4 border-[#b8b8b8] border rounded-full motion-preset-expand">
         <input
           className="bg-transparent outline-none rounded-full px-4 py-2"
           placeholder="Enter you email"

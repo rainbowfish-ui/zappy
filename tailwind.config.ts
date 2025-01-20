@@ -13,7 +13,10 @@ export default {
         foreground: "var(--foreground)",
       },
       backgroundImage: { shadow: 'url("/shadow.svg")' },
+      animationDelay: {
+        "anime-delay-500": "500ms",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-motion")],
 } satisfies Config;
