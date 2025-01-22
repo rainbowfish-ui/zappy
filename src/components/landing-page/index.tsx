@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import Hero from "./hero";
 import Services from "./services";
 import Testimonial from "./testimonial";
+import Pricing from "./pricing";
+import Footer from "./footer";
 
 const LandingPage = () => {
   return (
@@ -11,6 +13,8 @@ const LandingPage = () => {
       <Hero />
       <Services />
       <Testimonial />
+      <Pricing />
+      <Footer />
     </div>
   );
 };

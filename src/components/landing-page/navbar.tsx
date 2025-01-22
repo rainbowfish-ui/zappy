@@ -17,10 +17,16 @@ const Navbar = () => {
           <Link href="#services" className="text-[#c8c7c7] hover:text-white">
             Services
           </Link>
-          <Link href="#" className="text-[#c8c7c7] hover:text-white">
+          <Link
+            href="#testimonials"
+            className="text-[#c8c7c7] hover:text-white"
+          >
+            Testimonials
+          </Link>
+          <Link href="#pricing" className="text-[#c8c7c7] hover:text-white">
             Pricing
           </Link>
-          <Link href="#" className="text-[#c8c7c7] hover:text-white">
+          <Link href="#footer" className="text-[#c8c7c7] hover:text-white">
             Links
           </Link>
         </div>

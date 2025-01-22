@@ -56,16 +56,16 @@ const Services = () => {
     >
       <h2
         className={`text-5xl text-center text-gradient font-semibold ${
-          inView ? "motion-preset-pop" : ""
+          inView ? "motion-preset-pop motion-delay-500" : ""
         }`}
+        ref={ref}
       >
         Grow your business with <br /> our services
       </h2>
       <div
         className={`flex flex-wrap gap-10 items-center justify-center text-[rgb(197,197,197)] ${
-          inView ? "motion-preset-pop motion-delay-300" : ""
+          inView ? "motion-preset-pop motion-delay-500" : ""
         }`}
-        ref={ref}
       >
         {services.map(({ description, icon: Icon, name }) => {
           return (

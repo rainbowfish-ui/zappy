@@ -7,12 +7,15 @@ const Testimonial = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   return (
-    <div className="min-h-screen w-full flex items-center justify-start flex-col px-40">
+    <div
+      className="min-h-screen w-full flex items-center justify-start flex-col px-40"
+      id="testimonials"
+    >
       <div className="size-full pt-28 rounded-lg flex items-center justify-center flex-col gap-4">
-        <h4 className="uppercase tracking-[0.4rem]">Testimonial</h4>
+        <h4 className="uppercase tracking-[0.4rem]">Testimonials</h4>
         <h6
           className={`text-center text-6xl font-semibold text-gradient ${
-            inView ? "motion-preset-pop" : ""
+            inView ? "motion-preset-pop motion-delay-500" : ""
           }`}
           ref={ref}
         >
