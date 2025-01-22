@@ -4,13 +4,13 @@ import { PiStarFourBold } from "react-icons/pi";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-14 flex items-center justify-center px-32 sticky left-0 top-4 z-50">
+    <div className="w-full h-14 flex items-center justify-center lg:px-32 md:px-20 sticky left-0 top-4 z-50">
       <div className="bg-[#262626] size-full flex items-center justify-between px-10 rounded-full">
         <Link href="/" className="flex items-center justify-start gap-2">
           <PiStarFourBold size={26} />
           <h1 className="text-lg font-semibold">Zappy</h1>
         </Link>
-        <div className="flex w-fit items-center justify-between gap-10">
+        <div className="flex w-fit items-center justify-between lg:gap-10 max-md:hidden md:gap-2">
           <Link href="#home" className="text-[#c8c7c7] hover:text-white">
             Home
           </Link>

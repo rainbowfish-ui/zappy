@@ -8,11 +8,11 @@ const Pricing = () => {
   const inView = useInView(ref, { once: true });
   return (
     <div
-      className="w-full min-h-screen flex items-center pt-16 justify-center flex-col px-52 text-center gap-10 pb-10"
+      className="w-full min-h-screen flex items-center pt-16 max-md:pt-0 justify-center flex-col px-10 text-center gap-10 pb-10"
       id="pricing"
     >
       <h2
-        className={`text-5xl text-gradient ${
+        className={`text-5xl text-gradient max-md:text-4xl ${
           inView ? "motion-preset-expand motion-delay-500" : ""
         }`}
         ref={ref}
@@ -21,7 +21,7 @@ const Pricing = () => {
       </h2>
 
       <div
-        className={`size-full flex gap-10 items-center justify-center min-h-96 ${
+        className={`size-full flex flex-wrap gap-10 items-center justify-center min-h-96 ${
           inView ? "motion-preset-expand motion-delay-700" : ""
         }`}
       >
@@ -38,38 +38,38 @@ const Pricing = () => {
               maxime!
             </p>
           </div>
-          <div className="size-full flex flex-col gap-2">
-            <div className="flex gap-1 items-center justify-start text-base">
+          <div className="size-full flex flex-col gap-2 max-sm:text-xs">
+            <div className="flex gap-2 max-sm:gap-4 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Up to 5 users.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 max-sm:gap-4 items-center justify-start">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>10 GB storage.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 max-sm:gap-4 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Basic analytics and reporting.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 max-sm:gap-4 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Community access.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 max-sm:gap-4 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>API with basic rate limits.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 max-sm:gap-4 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
@@ -89,38 +89,38 @@ const Pricing = () => {
               maxime!
             </p>
           </div>
-          <div className="size-full flex flex-col gap-2">
-            <div className="flex gap-1 items-center justify-start text-base">
+          <div className="size-full flex flex-col gap-2 max-sm:text-xs">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Up to 5 users.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>10 GB storage.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Basic analytics and reporting.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Community access.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>API with basic rate limits.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
@@ -141,38 +141,38 @@ const Pricing = () => {
               maxime!
             </p>
           </div>
-          <div className="size-full flex flex-col gap-2">
-            <div className="flex gap-1 items-center justify-start text-base">
+          <div className="size-full flex flex-col gap-2 max-sm:text-xs">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Up to 5 users.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>10 GB storage.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Basic analytics and reporting.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>Community access.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>
               <p>API with basic rate limits.</p>
             </div>
-            <div className="flex gap-1 items-center justify-start text-base">
+            <div className="flex gap-2 items-center justify-start ">
               <span className="p-1 rounded-full border bg-black">
                 <FaStarOfLife size={12} />
               </span>

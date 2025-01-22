@@ -51,12 +51,12 @@ const Services = () => {
   const inView = useInView(ref, { once: true });
   return (
     <div
-      className="w-full flex items-center justify-center flex-col gap-10 px-40 min-h-screen"
+      className="w-full flex items-center justify-center flex-col gap-10 px-40 max-lg:px-2 min-h-screen"
       id="services"
     >
       <h2
-        className={`text-5xl text-center text-gradient font-semibold ${
-          inView ? "motion-preset-pop motion-delay-500" : ""
+        className={`text-5xl max-md:text-4xl text-center text-gradient font-semibold ${
+          inView ? "motion-preset-pop" : ""
         }`}
         ref={ref}
       >
@@ -64,7 +64,7 @@ const Services = () => {
       </h2>
       <div
         className={`flex flex-wrap gap-10 items-center justify-center text-[rgb(197,197,197)] ${
-          inView ? "motion-preset-pop motion-delay-500" : ""
+          inView ? "motion-preset-pop motion-delay-300" : ""
         }`}
       >
         {services.map(({ description, icon: Icon, name }) => {
