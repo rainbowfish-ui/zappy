@@ -51,7 +51,7 @@ const Services = () => {
   const inView = useInView(ref, { once: true });
   return (
     <div
-      className="w-full flex items-center justify-start flex-col gap-10 px-40"
+      className="w-full flex items-center justify-center flex-col gap-10 px-40 min-h-screen"
       id="services"
     >
       <h2

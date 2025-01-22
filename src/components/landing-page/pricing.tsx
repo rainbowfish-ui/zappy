@@ -8,12 +8,12 @@ const Pricing = () => {
   const inView = useInView(ref, { once: true });
   return (
     <div
-      className="w-full min-h-96 flex items-center justify-start flex-col px-52 text-center gap-4 pb-10"
+      className="w-full min-h-screen flex items-center pt-16 justify-center flex-col px-52 text-center gap-10 pb-10"
       id="pricing"
     >
       <h2
         className={`text-5xl text-gradient ${
-          inView ? "motion-preset-pop motion-delay-500" : ""
+          inView ? "motion-preset-expand motion-delay-500" : ""
         }`}
         ref={ref}
       >
@@ -79,7 +79,6 @@ const Pricing = () => {
         </div>
         <div className="w-80 h-[28rem] rounded-xl bg-[#1e1e1e] p-2 flex flex-col gap-4 relative overflow-hidden">
           <div className="size-[50rem] absolute bg-shadow bg-no-repeat pointer-events-none -left-60 -top-40 z-[100]" />
-
           <div className="w-full h-40 rounded-lg bg-black flex items-start flex-col p-4 gap-2">
             <p className="text-lg">Starter plan</p>
             <p className="text-3xl font-semibold">
